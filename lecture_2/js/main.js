@@ -1,6 +1,13 @@
-import Robot from "./Robot";
-import DomManipulator from "./DomManipulator";
+import React from "react";
+import ReactDOM from "react-dom";
+import CommentBox from "./components/CommentBox";
 
-var robot = new Robot();
-robot.beep();
-DomManipulator();
+ReactDOM.render(
+  React.createElement(CommentBox, {
+    comments: [
+      {author:'kait', text: 'Comment 1'},
+      {author:'ylo', text: 'Comment 2'}
+    ]
+  }),
+  document.getElementById('content')
+);
