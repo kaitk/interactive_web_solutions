@@ -6,7 +6,7 @@ const Word = (props) => {
   );
 };
 
-Word.propTypes= {
+Word.propTypes = {
   word: React.PropTypes.string.isRequired
 };
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-const TypingArea = React.createClass({
+const TypingContainer = React.createClass({
   getInitialState: () => {
     return {text: ''};
   },
@@ -22,4 +22,4 @@ const TypingArea = React.createClass({
   }
 });
 
-export {TypingArea as default};
+export {TypingContainer as default};

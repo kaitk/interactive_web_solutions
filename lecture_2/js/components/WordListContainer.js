@@ -1,7 +1,7 @@
 import React from "react";
 import Word from "./Word";
 
-const WordList = (props) => {
+const WordListContainer = (props) => {
   return (
     <div className="words-outer">
       <div className="words">
@@ -10,9 +10,8 @@ const WordList = (props) => {
     </div>
   );
 };
-
- WordList.propTypes= {
+ WordListContainer.propTypes = {
   words: React.PropTypes.array.isRequired
 };
 
-export { WordList as default };
+export { WordListContainer as default };
