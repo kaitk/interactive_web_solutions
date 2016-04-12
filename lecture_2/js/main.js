@@ -1,13 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import CommentBox from "./components/CommentBox";
+import SpeedTyper from "./components/SpeedTyper";
 
 ReactDOM.render(
-  React.createElement(CommentBox, {
-    comments: [
-      {author:'kait', text: 'Comment 1'},
-      {author:'ylo', text: 'Comment 2'}
-    ]
-  }),
+  <SpeedTyper />,
   document.getElementById('content')
 );
