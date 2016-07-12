@@ -29,7 +29,7 @@ const StatsContainer =  React.createClass({
 
   wordsPerMinute: function() {
     let now = Math.floor(Date.now(), 1000);
-    let minutesPassed = (now - this.props.startTime) / (60 * 60)
+    let minutesPassed = (now - this.props.startTime) / (60 * 1000)
     return  this.props.pastInput.length / minutesPassed;
   },
 
