@@ -9,7 +9,7 @@ import Word from '../Word';
 
 describe('Word', () => {
 
-  var Wrapper = React.createClass({
+  let Wrapper = React.createClass({
     render: function() {
       return (
         <div>{this.props.children}</div>
@@ -17,7 +17,7 @@ describe('Word', () => {
     }
   });
 
-  var buildWord = ((color, children) => {
+  let buildWord = ((color, children) => {
     let dom = TestUtils.renderIntoDocument(
       <Wrapper>
         <Word color={color} >{children}</Word>

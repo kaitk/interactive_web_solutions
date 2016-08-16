@@ -9,7 +9,7 @@ import WordList from '../WordList';
 
 describe('WordList', () => {
 
-  var buildWordList = ((children) => {
+  let buildWordList = ((children) => {
     let renderer = TestUtils.createRenderer();
     renderer.render(
       <WordList >{children}</WordList>

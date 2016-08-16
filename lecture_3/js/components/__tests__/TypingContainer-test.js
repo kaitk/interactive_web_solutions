@@ -10,7 +10,7 @@ import TypingContainer from '../TypingContainer';
 
 describe('TypingContainer', () => {
 
-  var renderTypingContainer = (currentWord, onTextChange) => {
+  let renderTypingContainer = (currentWord, onTextChange) => {
     let renderer = TestUtils.createRenderer();
     renderer.render(
       <TypingContainer onTextChange={onTextChange} currentWord={currentWord}/>
@@ -18,7 +18,7 @@ describe('TypingContainer', () => {
     return renderer.getRenderOutput();
   }
 
-  var Wrapper = React.createClass({
+  let Wrapper = React.createClass({
     render: function() {
       return (
         <div>{this.props.children}</div>
@@ -26,7 +26,7 @@ describe('TypingContainer', () => {
     }
   });
 
-  var renderTypingContainerIntoDocument = ((currentWord, onTextChange) => {
+  let renderTypingContainerIntoDocument = ((currentWord, onTextChange) => {
     return TestUtils.renderIntoDocument(
       <Wrapper>
   	   <TypingContainer onTextChange={onTextChange} currentWord={currentWord} />

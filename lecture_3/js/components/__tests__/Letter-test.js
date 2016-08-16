@@ -9,7 +9,7 @@ import Letter from '../Letter';
 
 describe('Letter', () => {
 
-  var Wrapper = React.createClass({
+  let Wrapper = React.createClass({
     render: function() {
       return (
         <div>{this.props.children}</div>
@@ -17,7 +17,7 @@ describe('Letter', () => {
     }
   });
 
-  var buildLetter = ((color, children) => {
+  let buildLetter = ((color, children) => {
     let dom = TestUtils.renderIntoDocument(
       <Wrapper>
         <Letter color={color} >{children}</Letter>

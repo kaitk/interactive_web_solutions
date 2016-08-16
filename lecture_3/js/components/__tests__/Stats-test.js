@@ -9,7 +9,7 @@ import Stats from '../Stats';
 
 describe('Stats', () => {
 
-  var buildStats = (accuracy, wordsPerMinute) => {
+  let buildStats = (accuracy, wordsPerMinute) => {
     let renderer = TestUtils.createRenderer();
     renderer.render(<Stats accuracy={accuracy} wordsPerMinute={wordsPerMinute}/>)
     return renderer.getRenderOutput();

@@ -12,7 +12,7 @@ Stats.mockImplementation(() => <div />)
 
 describe('StatsContainer', () => {
 
-  var buildStatsContainer = (words, pastInput, startTime) => {
+  let buildStatsContainer = (words, pastInput, startTime) => {
     let renderer = TestUtils.createRenderer();
     renderer.render(
       <StatsContainer words={words}
